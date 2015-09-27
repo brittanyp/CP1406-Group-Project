@@ -2,12 +2,14 @@
 <html lang=''>
 <head>
    <meta charset='utf-8'>
-   <link rel="stylesheet" href="chickens.css">
+   <link rel="stylesheet" href="chickens.css" type="text/css">
+   <link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
+   <script src="themes/1/js-image-slider.js" type="text/javascript"></script>
    <title>Test</title>
 </head>
 <body>
 
-<header>
+<div id="wrap">
    <div id='navigation'>
       <ul>
          <li class='active'><a href='#'><span>Chicken</span></a></li>
@@ -17,14 +19,25 @@
          <li><a href='#'><span>Chicken</span></a></li>
       </ul>
    </div>
-</header>
 
-<content>
+   <div id="content">
+      <div id="top">
+         <h1>CHICKEN REEF ORCHESTRA</h1>
+      </div>
+      <div id="sliderFrame">
+         <div id="slider">
+            <img src="images/chickenOne.jpg"/>
+            <img src="images/chickenTwo.jpg"/>
+            <img src="images/chickenThree.jpg"/>
+            <img src="images/chickenFour.jpg"/>
+            <img src="images/chickenFive.jpg"/>
+         </div>
+      </div>
+      <div id="bot">
+         <p>HIRING CHICKENS</p>
+      </div>
+   </div>
 
-
-</content>
-
-<footer>
    <div id="footer">
       <ul>
          <li id='cName'><span>&copy; 2015 Chicken Reef Orchestra </span></li>
@@ -33,7 +46,6 @@
 
       </ul>
    </div>
-</footer>
-
+</div>
 </body>
 <html>
