@@ -1,0 +1,136 @@
+/*General Looks*/
+h1 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2.5em;
+  line-height: 1.5em;
+  letter-spacing: -0.05em;
+  margin-bottom: 20px;
+  padding: .1em 0;
+	position: relative;
+	text-align: center;
+}
+h2 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 2.1em;
+	line-height: 1.4em;
+	letter-spacing: normal;
+	margin-bottom: 20px;
+	padding: .1em 0;
+	color: #1B1B1B;
+	position: relative;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.8em;
+	line-height: 1.4em;
+	letter-spacing: normal;
+	margin-bottom: 20px;
+	padding: .1em 0;
+	color: #3F3F3F;
+	position: relative;
+	text-align: center;
+}
+
+body {
+	background-color: #000000;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #010101;
+	font-size: 70%;
+	line-height: 1;
+}
+
+/*Floating Navigation Look */
+
+nav, section { display: block; }
+ol, ul { list-style: none; }
+
+#stickynav {
+  display: block;
+  height: 35px;
+  width: 100%;
+  z-index: 9999;
+}
+
+#stickynav #nav { position: fixed; z-index: 9999;}
+#stickynav #nav li { display: inline; }
+#stickynav #nav li a {
+  display: block;
+  float: left;
+  margin-right: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 5px 7px;
+  background: #cce4c4;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#stickynav #nav li a:hover { 
+  text-decoration: none;
+  background: #d8f0d0;
+}
+
+#stickynav #nav li a.nav-active {
+  color: #000;
+}
+
+/*Section seperation*/
+
+.section {
+  padding-top: 90px;
+}
+
+/** page structure **/
+#w {
+  display: block;
+  width: 750px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+#content {
+	display: block;
+	width: 100%;
+	background-color: #E7E7E7;
+	padding: 25px 20px;
+	padding-bottom: 35px; 
+}
+
+/*Support section based CSS*/
+.supbutton {
+	color: #FFFFFF;
+	background-image: url(buttonbackground.png);
+	background-size: 100%;
+	width: 20em;
+	height: 11em;
+	background-repeat: no-repeat;
+}
+
+#col1 {
+	float:left;
+	width:46%;
+	position:relative;
+	
+	overflow:hidden;
+}
+#col2 {
+	float:left;
+	width:46%;
+	position:relative;
+	
+	overflow:hidden;
+}
+
+/*Sponsors Image CSS*/
+
+div.img img {
+	margin: 3em;
+}
+
+/*Photo in about section*/
+#aboutphoto {display: block;
+   margin: auto;
+	
+}
