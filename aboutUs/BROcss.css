@@ -16,6 +16,8 @@
   padding-top:1%;
   padding-bottom: 1%;
   padding: 25px 20px;
+ 
+  
 }
 #navigation ul {
   list-style: none;
@@ -214,14 +216,16 @@ ol, ul { list-style: none; }
   font-size: 1.2em;
   font-weight: bold;
   padding: 5px 7px;
-  background: #cce4c4;
+  background: #CCC;
+  color: #000;
+  text-decoration:none;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
 #stickynav #nav li a:hover { 
   text-decoration: none;
-  background: #d8f0d0;
+  background: #E6E6E6;
 }
 
 #stickynav #nav li a.nav-active {
@@ -231,7 +235,7 @@ ol, ul { list-style: none; }
 /*Section seperation*/
 
 .section {
-  padding-top: 90px;
+  padding-top: 30px;
 }
 
 /** page structure **/
