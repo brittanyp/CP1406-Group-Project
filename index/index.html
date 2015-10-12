@@ -3,32 +3,29 @@
 <head>
    <meta charset='utf-8'>
    <link rel="stylesheet" href="../aboutUs/BROcss.css" type="text/css">
-   <link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
-
+   <link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css"/>
    <script src="themes/1/js-image-slider.js" type="text/javascript"></script>
    <title>Test</title>
 </head>
 <body>
 
 <div id="wrap"><br>
-<img src="file:///F|/IT/Semester 1 2015/CP1406/Assignment2 plan/Logo/BROWEBlogotrans.png" width="80" height="110">
+   <div id="logo">
+      <img src="file:///F|/IT/Semester 1 2015/CP1406/Assignment2 plan/Logo/BROWEBlogotrans.png" width="80" height="110" >
+   </div>
    <div id='navigation'>
       <ul>
-         <li class='active'><a href='index.html'><span>Home</span></a></li>
+         <li><a href='index.html'><span>Home</span></a></li>
          <li><a href='../Events/Events.html'><span>Events</span></a></li>
          <li><a href='../Members/Members.html'><span>Members</span></a></li>
-<<<<<<< HEAD
+         <li><a href='../photogallery/photogallery.html'><span>Photo Gallery</span></a></li>
          <li><a href='../Education/education.html'><span>Education</span></a></li>
          <li><a href='../Tickets/ticket.html'><span>Tickets</span></a></li>
-=======
-         <li><a href='#'><span>Education</span></a></li>
-         <li><a href='#'><span>Tickets</span></a></li>
->>>>>>> c839b05ae4d317aa0b00ac86a49c55a934293a04
          <li><a href='../aboutUs/aboutUs.html'><span>About Us</span></a></li>
-         <li><a href='../photogallery/photogallery.html'><span>Photo Gallery</span></a>
       </ul>
-      <img src="linerheader.jpg" width="600" height="7"> 
+
    </div>
+   <img src="linerheader.jpg" width="600" height="7">
 
    <div id="content">
       <div id="top">
@@ -43,18 +40,11 @@
             <img src="images/last_night_of_the_proms_bro_dsc0422.jpg"/>
          </div>
       </div>
-<<<<<<< HEAD
       
 
       <div id="botWrap">
       <div id="botOne">
          <h2>Upcoming Events:</h2>
-=======
-
-      <div id="botWrap">
-      <div id="botOne">
-         <p>Upcoming Events:</p>
->>>>>>> c839b05ae4d317aa0b00ac86a49c55a934293a04
          <ul>
             <li>
                To be continued
@@ -62,18 +52,20 @@
          </ul>
       </div>
       <div id="botTwo">
-<<<<<<< HEAD
          <a href="ticket.html">
          <button id="tickets">Get Tickets</button>
-        </a>      </div>
-      <div id="botThree">
-         <h2>FB</h2>
-=======
-         <button id="tickets">Get Tickets</button>
+        </a>
       </div>
       <div id="botThree">
-         <p>FB</p>
->>>>>>> c839b05ae4d317aa0b00ac86a49c55a934293a04
+         <div id="fb-root"></div>
+         <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/sv_SE/sdk.js#xfbml=1&version=v2.5";
+            fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));</script>
+         <div class="fb-page" data-href="https://www.facebook.com/nqorchestra" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/nqorchestra"><a href="https://www.facebook.com/nqorchestra">Barrier Reef Orchestra</a></blockquote></div></div>
       </div>
       </div>
    </div>
