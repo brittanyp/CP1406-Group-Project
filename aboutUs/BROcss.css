@@ -1,5 +1,16 @@
+@import url("Leauge_Gothic/stylesheet.css");
+@import url("Ubuntu_R/stylesheet.css");
+@import url("PT_Seriff/stylesheet.css");
 /*navigation/footer*/
 
+#logo {float: left;}
+
+#headerline {margin: auto;
+			display: block;
+}
+#header {
+			background-color: black;
+}
 #wrap {
   display: block;
   width: 900px;
@@ -13,6 +24,7 @@
   text-align: left;
   padding-top:1%;
   padding-bottom: 1%;
+  float: right
   
 }
 #navigation ul {
@@ -102,7 +114,7 @@
   padding-right: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 100px) {
   #navigation ul li {
     float: none;
     display: block;
@@ -124,21 +136,100 @@
 }
 
 
+/*MOBILE DISPLAY*/
+#menu-icon {
+
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: #4C8FEC url(../img/menu-icon.png) center;
+
+}
+
+a:hover#menu-icon {
+
+	background-color: #444;
+	border-radius: 4px 4px 0 0;
+
+}
+
+@media screen and (max-width: 640px) {
+
+#wrap {	
+	width: 100%;
+	overflow-x: hidden; /* Stops horizontal scrolling. */
+}
+
+#sliderFrame {
+				display:hidden;
+}
+
+#navigation ul li a {
+  color: black;
+}
+
+#navigation ul li.active a {
+  color: Black;
+}
+
+#header {
+				z-index:100;	/* Menu is above page content*/
+				position:absolute;
+				height:10px;
+				
+}
+
+.headerend {padding-top:90px;
+}
+
+#menu-icon {
+
+		display:inline-block;
+
+	}
+
+	#navigation ul, nav:active ul { 
+
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #fff;
+		border: 5px solid #444;
+		left: 20px;
+		top: 30px;
+		width: 100%;
+		border-radius: 4px 0 4px 4px;
+
+	}
+
+	#navigation li {
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+
+	}
+
+	#navigation:hover ul {
+
+		display: block;
+
+	}
+}
 /*General Looks*/
 
 h1 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 2.5em;
-  line-height: 1.5em;
-  letter-spacing: -0.05em;
-  margin-bottom: 20px;
-  padding: .1em 0;
+	font-family: "Leauge Gothic";
+	margin-bottom: 20px;
+	padding: .1em 0;
 	position: relative;
 	text-align: center;
+	font-size: 80px;
 }
 h2 {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 2.1em;
+	font-family: "Leauge Gothic";
+	font-size: 30px;
 	line-height: 1.4em;
 	letter-spacing: normal;
 	margin-bottom: 20px;
@@ -149,8 +240,8 @@ h2 {
 }
 
 h3 {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 1.8em;
+	font-family: "Leauge Gothic";
+	font-size: 25px;
 	line-height: 1.4em;
 	letter-spacing: normal;
 	margin-bottom: 20px;
@@ -162,10 +253,11 @@ h3 {
 
 body {
 	background-color: #000000;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: "Ubuntu R";
 	color: #010101;
-	font-size: 70%;
+	font-size: 15px;
 	line-height: 1;
+	text-align: justify;
 }
 /************INDEX PAGE CSS START*******************/
 #top, #bot{
@@ -178,9 +270,6 @@ body {
   margin-top:10px;
   margin-bottom:25px;
   text-align:center;
-}
-#top h1 {
-  font: bold 20px "Century Schoolbook", Georgia, Times, serif;
 }
 
 #bot {
@@ -196,45 +285,7 @@ body {
 	position:relative;
 }
 /************ABOUT US PAGE CSS START*******************/
-/*Floating Navigation Look */
-
-nav, section { display: block; }
-ol, ul { list-style: none; }
-
-#stickynav {
-  display: block;
-  height: 35px;
-  width: 100%;
-  z-index: 9999;
-}
-
-#stickynav #nav { position: fixed; z-index: 9999;}
-#stickynav #nav li { display: inline; }
-#stickynav #nav li a {
-  display: block;
-  float: left;
-  margin-right: 8px;
-  font-size: 1.2em;
-  font-weight: bold;
-  padding: 5px 7px;
-  background: #CCC;
-  color: #000;
-  text-decoration:none;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-}
-#stickynav #nav li a:hover { 
-  text-decoration: none;
-  background: #E6E6E6;
-}
-
-#stickynav #nav li a.nav-active {
-  color: #000;
-}
-
 /*Section seperation*/
-
 .section {
   padding-top: 30px;
 }
@@ -251,9 +302,12 @@ ol, ul { list-style: none; }
 	display: block;
 	width: 100%;
 	background-color: #F6F6F6;
-  margin-top: 20px;
+	margin-top: 20px;
 	padding: 25px 20px;
+
+
 	"padding-bottom: 35px;
+	/* [disabled]text-align: center; */
 }
 
 /*Support section based CSS*/
@@ -264,6 +318,11 @@ ol, ul { list-style: none; }
 	width: 20em;
 	height: 11em;
 	background-repeat: no-repeat;
+}
+
+.supbutton:hover {
+		background-image:url(buttonbackgroundhover.png);
+		font-weight: bold;
 }
 
 #col1 {
@@ -358,4 +417,60 @@ div.img img {
   display: inline-block;
   padding: 0;
   margin-left: 20%;
+}
+
+/*EDUCATION CSS START*/
+.centred {margin:auto;
+				display:block;
+}
+
+.textwrap {
+			float:right;
+			margin:10px;
+}
+
+#backtotop h1 {text-align:center;
+				display: block;
+				font-size:3em;
+}
+
+/*RESOURCE LIBRARY CSS*/
+.resbutton {
+	color: #FFFFFF;
+	background-image: url(buttonbackground.png);
+	background-size: 100%;
+	width: 20em;
+	height: 11em;
+	background-repeat: no-repeat;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	padding:10px;
+	margin: auto;
+	display: block;
+}
+
+.resbutton:hover {
+		background-image:url(buttonbackgroundhover.png);
+		font-weight: bold;
+}
+
+/*TICKETS CSS*/
+.ticbutton {
+	color: #FFFFFF;
+	background-image: url(buttonbackground.png);
+	background-size: 100%;
+	width: 20em;
+	height: 11em;
+	background-repeat: no-repeat;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	padding:10px;
+	
+}
+
+.ticbutton:hover {
+		background-image:url(buttonbackgroundhover.png);
+		font-weight: bold;
 }

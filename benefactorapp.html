@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Benefactor Application | BRO</title>
+<link href="aboutUs/BROcss.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="wrap">
+
+	<div id="header">
+    
+	<div id="logo">
+        <a href="index.html"><img src="aboutUs/BROlogotrans.png" id="headerline" ></a>
+	</div>
+	<div id="navigation">
+    
+    <a href="#" id="menu-icon"></a>
+    
+      <ul>
+         <li class='active'><a href='index.html'><span>Home</span></a></li>
+         <li><a href='Events/Events.html'><span>Events</span></a></li>
+         <li><a href='Members/Members.html'><span>Members</span></a></li>
+          <li><a href='photogallery/photogallery.html'><span>Photo Gallery</span></a></li>
+         <li><a href='Education/education.html'><span>Education</span></a></li>
+         <li><a href='tickets/ticket.html'><span>Tickets</span></a></li>
+         <li><a href='aboutUs/aboutUs.html'><span>About Us</span></a></li>
+
+      </ul>
+     </div>
+     
+     </div>
+   <img src="Contact Us/linerheader.jpg" width="600" height="7" class="headerend">
+
+
+    <div id="content">
+         <h1>Benefactor Application </h1>
+        <p>With a philanthropic gift of $200 or more (we leave that up to you) you can become an Rochestra Benefactor and be placed on our Benefactor roll for twelve months. This roll will be published in each concert Program and on our website. As a benefactor you will also recieve two complimentary tickets to our next concert, be placed on the mailing list for our newsletter and be a guest at our annual 'Season's Lunch' function.</p>
+        <p>Donations are tax deductable, for more information contact Simon McConnell at either:
+            <ul>
+                <li>0418776961</li>
+                <li>mcconnellgray@optusnet.com.au</li>
+            </ul>
+        <p>Make cheques payable to North Queensland Ensembles Inc.</p>
+        <p>Pay by Direct debit to BSB 034 222 account no 173922.</p>
+        <p>Please complete the details below.</p>
+        <form name="benefactorApp" action="http://ditwebtsv.jcu.edu.au/~sci-lmw1/forms.php" onsubmit="return validateForm()" method= "post">
+            Contribute $:<br>
+            <input type="text" name="contribution">
+            <br>
+            <input type="radio" name="paymentType" value="Cheque" >Cheque
+            <br>
+            <input type="radio" name="paymentType" value="Eftpos" >Eftpos <br>
+            Benefactor Name on roll:<br>
+            <input type="text" name="benefactorRollName" ><br>
+            <input type="radio" name="benefactorRollNameAnon" value="Anon" >Remain anonymous<br>
+            <input type="radio" name="benefactorRollNameAnon" value="Name" >Use benefactor Name above<br>
+            Name:
+            <input type="text" name="benefactorName" >
+            <br>
+            Mailing Address:
+            <input type="text" name="benefactorAddress" >
+            <br>
+            E-mail Address:
+            <input type="text" name="benefactorEmail" >
+            <br>
+            Phone:
+            <input type="text" name="benefactorPhone" >
+            <br>
+            Mobile:
+            <input type="text" name="benefactorMobile" >
+            <br>
+            Signature (upload a small.png file of signature)
+            <input type="file" name="benefactorSignature" id="benefactorSignature" ><br>
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+    <div id="footer">
+      <ul>
+         <li id='cName'><span>&copy; 2015 Barrier Reef Orchestra </span></li>
+         <li><a href='FAQ/FAQ.html'><span>FAQ</span></a></li>
+         <li><a href='Contact Us/ContactUs.html'><span>Contact us</span></a></li>
+          <li><a href="resourcelibrary/resourcelibrary.html">Resource Library</a></li>
+		
+      </ul>
+   </div>
+</div>
+<script>
+function validateForm() {
+    var x = document.forms["benefactorApp"]["contribution"].value;
+    if (x == null || x == "" || x<200) {
+        alert("Must enter an amount greater or equal to $200");
+        return false;
+    }
+
+    var x = document.forms["benefactorApp"]["paymentType"].value;
+    if (x == null || x == "") {
+        alert("Must Choose a payment type");
+        return false;
+    }
+
+    var x = document.forms["benefactorApp"]["benefactorRollName"].value;
+    if (x == null || x == "") {
+        alert("Write a benefactor name");
+        return false;
+    }
+
+    var x = document.forms["benefactorApp"]["benefactorRollNameAnon"].value;
+    if (x == null || x == "") {
+        alert("Select anon or benefactor name");
+        return false;
+    }
+
+    var x = document.forms["benefactorApp"]["benefactorName"].value;
+    if (x == null || x == "") {
+        alert("Please Provide your name");
+        return false;
+    }
+
+    var x = document.forms["benefactorApp"]["benefactorAddress"].value;
+    if (x == null || x == "") {
+        alert("Please Provide your address");
+        return false;
+    }
+
+    var x = document.forms["benefactorApp"]["benefactorEmail"].value;
+    if (x == null || x == "") {
+        alert("Please Provide your e-mail");
+        return false;
+    }
+
+    var x = document.forms["benefactorApp"]["benefactorPhone"].value;
+	var y = document.forms["benefactorApp"]["benefactorMobile"].value;
+    if ((x == null || x == "") && (y== null || y=="") ) {
+        alert("Please Provide your phone or mobile");
+        return false;
+    }
+
+    var x = document.forms["benefactorApp"]["benefactorSignature"].value;
+    if (x == null) {
+        alert("Please Provide your signature");
+        return false;
+    }
+} 
+
+</script>  
+           
+
+
+	
+</body>
+</html>

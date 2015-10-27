@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Membership | BRO</title>
+<link href="aboutUs/BROcss.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="wrap">
+
+	<div id="header">
+    
+	<div id="logo">
+        <a href="index.html"><img src="aboutUs/BROlogotrans.png" id="headerline" ></a>
+	</div>
+	<div id="navigation">
+    
+    <a href="#" id="menu-icon"></a>
+    
+      <ul>
+         <li class='active'><a href='index.html'><span>Home</span></a></li>
+         <li><a href='Events/Events.html'><span>Events</span></a></li>
+         <li><a href='Members/Members.html'><span>Members</span></a></li>
+          <li><a href='photogallery/photogallery.html'><span>Photo Gallery</span></a></li>
+         <li><a href='Education/education.html'><span>Education</span></a></li>
+         <li><a href='tickets/ticket.html'><span>Tickets</span></a></li>
+         <li><a href='aboutUs/aboutUs.html'><span>About Us</span></a></li>
+
+      </ul>
+     </div>
+     
+     </div>
+   <img src="Contact Us/linerheader.jpg" width="600" height="7" class="headerend">
+
+
+    <div id="content">
+         <h1>Membership</h1>
+        <h2>Membership Fees</h2>
+            <ul>
+                <li>Adult - $30</li>
+                <li>Full Time student - $15</li>
+                <li>Under 18 yrs - $15</li>
+                <li>Concession - $15</li>
+                <li>Family Membership - $60</li>
+            </ul>
+        <p>Concession available to persons in receipt of Centrelink or DVA income support and holders of Commonwealth Senior's Health Card Card.)</p>
+        <p> Family membership available to group of two adults and three persons under the age of 18 all of whom reside at the same address.)</p>
+        <p>Please complete the details below.</p>
+        <form name="membershipApp" action="http://ditwebtsv.jcu.edu.au/~sci-lmw1/forms.php" onsubmit="return validateForm()" method= "post">
+        	<h2>Membership Type</h2>
+            Membership Type:<br>
+            <input type="radio" name="membershipType" value="adult" autofocus >Adult<br>
+            <input type="radio" name="membershipType" value="student">Student<br>
+            <input type="radio" name="membershipType" value="family" >Family<br>
+            <input type="radio" name="membershipType" value="concession">Concession<br>
+            Concession Number:<br>
+            <input type="text" name="concessionNumber">
+            <br>
+            
+          <h2>Applicant Details:</h2>
+            Title:<br>
+          <input type="text" name="title1" required><br>
+            Family Name:<br>
+          <input type="text" name="familyName1" required><br>
+            Given Names: <br>
+          <input type="text" name="givenNames1" required><br><br>
+            
+            Title:<br>
+            <input type="text" name="title2" ><br>
+            Family Name: <br>
+            <input type="text" name="familyName2" ><br>
+            Given Names: <br>
+            <input type="text" name="givenNames2" ><br><br>
+            
+            Child 1 Name <br>
+            <input type="text" name="childName1" ><br>
+            Child 1 DOB <br>
+            <input type="text" name="childDOB1" ><br><br>
+            Child 2 Name <br>
+            <input type="text" name="childName2" ><br>
+            Child 2 DOB <br>
+            <input type="text" name="childDOB2" ><br><br>
+            Child 3 Name <br>
+            <input type="text" name="childName3" ><br>
+            Child 3 DOB <br>
+            <input type="text" name="childDOB3" ><br><br>
+            
+            Address: <br>
+            <input type="text" name="address" required><br>
+            Telephone: <br>
+            <input type="text" name="telephone" required ><br>
+            E-mail:<br>
+            <input type="text" name="email" required><br>
+            
+            <h2>Payment Options</h2>
+            Amount: <br>
+            <input type="text" name="amount" required ><br>
+            <input type="radio" name="paymentType" value="Cash">Cash<br>
+            <input type="radio" name="paymentType" value="Cheque">Cheque<br>
+            <input type="radio" name="paymentType" value="Direct Debit">Direct Debit<br>
+            <p>Direct debit: NQ Ensembles Inc<br>BSB: 034-222<br>Account:17-3033<br>(Include Family Name as payment reference)</p>
+            <h2>How you can help the Orchestra</h2>
+            I would like to assist the orchestra:<br>
+            <input type="radio" name="orchestraAssist" value="player">As a player<br>
+            <input type="radio" name="orchestraAssist" value="manageadmin">Management/Administration<br>
+            <input type="radio" name="orchestraAssist" value="playerSupport">Player Support<br>
+            <input type="radio" name="orchestraAssist" value="fundrasising">Fundrasising<br>
+            <input type="radio" name="orchestraAssist" value="marketpromo">Marketing/Promotion<br>
+            <input type="radio" name="orchestraAssist" value="sponsorship">Sponsorship<br>
+            <input type="radio" name="orchestraAssist" value="desktopPublish">Desktop Publishing<br>
+            
+            <h2>Player Registration</h2>
+            Instrument(s): <br>
+            <input name="intrument" type="text"><br>
+            Qualifications: <br>
+            <input name="qualifications" type="text"><br>
+            Experience: <br>
+            <input name="experience" type="text"><br><br>
+            
+            
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+    <div id="footer">
+      <ul>
+         <li id='cName'><span>&copy; 2015 Barrier Reef Orchestra </span></li>
+         <li><a href='FAQ/FAQ.html'><span>FAQ</span></a></li>
+         <li><a href='Contact Us/ContactUs.html'><span>Contact us</span></a></li>
+          <li><a href="resourcelibrary/resourcelibrary.html">Resource Library</a></li>
+		
+      </ul>
+   </div>
+</div>
+<script>
+function validateForm() {
+    var x = document.forms["benefactorApp"]["membershipType"].value;
+    if (x == null){
+        alert("Must Choose a Membership Type");
+        return false;
+    }
+	
+	var x = document.forms["benefactorApp"]["membershipType"].value;
+	var y = document.forms["benefactorApp"]["concessionNumber"].value;
+    if (y != null && (x == "" || x== null)){
+        alert("Please Provide your concession number");
+        return false;
+    }
+	
+	var x = document.forms["benefactorApp"]["paymentType"].value;
+    if (x == null){
+        alert("Please choose a payment type");
+        return false;
+    }
+	
+	var x = document.forms["benefactorApp"]["orchestraAssist"].value;
+    if (x == null){
+        alert("Please choose an assist type");
+        return false;
+    }
+	
+	var z = document.forms["benefactorApp"]["intrument"].value;
+	var y = document.forms["benefactorApp"]["qualifications"].value;
+	var x = document.forms["benefactorApp"]["experience"].value;
+	var v = document.forms["benefactorApp"]["orchestraAssist"].value;
+	    if (v ="player"  && ((y == "" || y== null) || (x == "" || x== null)|| ( z== "" || z== null))){
+        alert("Please complete player registration");
+        return false;
+    }
+
+
+} 
+
+</script>   
+           
+
+
+	
+</body>
+</html>
